@@ -38,10 +38,10 @@ class Marker extends Pen
 	 * @param 	tipShape	The shape of the writing tip. Valid shapes are "chisel", "bullet", and "wide"
 	 * @param 	tipSize	The size of the tip in millimeters. Must be positive
 	 */
-   public Marker(String inkColor, String tipShape, double tipSize)
+   public Marker(String inkColor, String tipShape, double tipSize, boolean erasable)
 	
 	{
-		super(inkColor, "plastic", tipSize);
+		super(inkColor, "plastic", tipSize, erasable);
 		this.tipShape = tipShape;
 	}
 
@@ -53,7 +53,7 @@ class Marker extends Pen
 	public Marker()
 	
 	{
-		this("black", "chisel", 6.35);
+		this("black", "chisel", 6.35, false);
 	}
 
 	/**

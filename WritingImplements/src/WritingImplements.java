@@ -9,10 +9,10 @@ public class WritingImplements
 
 		
 		Pen oldFolks = new Pen();
-		Pen myPurplePen = new Pen("purple", "plastic", 0.7);
+		Pen myPurplePen = new Pen("purple", "plastic", 0.7, false);
 
-		Marker dryErase = new Marker("blue", "chisel", 6.35);
-		Marker sharpie = new Marker("green", "bullet", 2.0);
+		Marker dryErase = new Marker("blue", "chisel", 6.35, false);
+		Marker sharpie = new Marker("green", "bullet", 2.0, false);
 
 		myPurplePen.write("I'm hungry");
 
@@ -30,7 +30,7 @@ public class WritingImplements
  		myPencilBox.add(myPurplePen);
  		myPencilBox.add(dryErase);
 		myPencilBox.add(sharpie);
- 		myPencilBox.add(new Pen("blue", "plastic", 0.9));
+ 		myPencilBox.add(new Pen("blue", "plastic", 0.9, false));
 
  		for (WritingImplement w : myPencilBox)
   		{
