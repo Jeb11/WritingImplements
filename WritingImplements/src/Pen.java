@@ -1,6 +1,14 @@
 class Pen extends WritingImplement
 {
        
+	
+	public boolean erasable;
+	
+	public boolean getErasable() 
+	{
+		return erasable;
+	}
+	
     private String inkColor;
     
 	 /**
@@ -32,10 +40,11 @@ class Pen extends WritingImplement
      * @param 	bodyMaterial	The pen's material. It must be one of "plastic", "metal", or "wooden"
      * @param 	tipSize			The size of the point in millimeters (must be positive)
 	  */
-    public Pen(String inkColor, String bodyMaterial, double tipSize)
+    public Pen(String inkColor, String bodyMaterial, double tipSize, boolean erasable)
     {
   		  super(bodyMaterial, tipSize);
   	     this.inkColor = inkColor;
+  	     erasable = false;
     }
 
         
@@ -44,7 +53,7 @@ class Pen extends WritingImplement
      */
     public Pen()
     {
-		  this("black", "plastic", 0.5);
+		  this("black", "plastic", 0.5, false);
 
     }
 
